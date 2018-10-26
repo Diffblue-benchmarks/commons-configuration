@@ -13,7 +13,7 @@ phases:
 -
   timeout: 300
   cbmcArguments:
-    max-nondet-array-length: 10
+    max-nondet-string-length: 10
     max-nondet-array-length: 20
     unwind: 2
     string-non-empty: true
