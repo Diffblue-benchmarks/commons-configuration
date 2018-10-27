@@ -2,16 +2,16 @@
 cbmcArguments:
   classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
   depth: false
-  slice-function-calls: org\.slf4j\.Logger.*
+  java-external-code-action: 'mock'
 phases:
 -
-  timeout: 300
+  timeout: 60
   cbmcArguments:
     java-assume-inputs-non-null: true
     max-nondet-array-length: 10
     unwind: 1 
 -
-  timeout: 300
+  timeout: 120
   cbmcArguments:
     max-nondet-string-length: 10
     max-nondet-array-length: 20
@@ -23,3 +23,4 @@ phases:
     max-nondet-array-length: 30
     max-nondet-string-length: 10
     unwind: 5
+    
