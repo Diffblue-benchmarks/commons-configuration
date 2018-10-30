@@ -9,18 +9,20 @@ phases:
   cbmcArguments:
     java-assume-inputs-non-null: true
     max-nondet-array-length: 10
-    unwind: 1 
+    java-version: 7
+    unwind: 1
 -
   timeout: 120
   cbmcArguments:
     max-nondet-string-length: 10
     max-nondet-array-length: 20
     unwind: 2
+    java-version: 7
     string-non-empty: true
 -
   timeout: 300
   cbmcArguments:
     max-nondet-array-length: 30
     max-nondet-string-length: 10
+    java-version: 7
     unwind: 5
-    
